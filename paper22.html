@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Exam Notes</title>
+    <style>
+        :root {
+
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent-color: #4CAF50;
+            --secondary-color: #2196F3;
+            --highlight-color: #FF9800;
+            --border-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --accent-color: #4CAF50;
+            --secondary-color: #2196F3;
+            --highlight-color: #FF9800;
+            --border-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h1 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .search-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #search {
+            padding: 10px 15px;
+            width: 60%;
+            max-width: 500px;
+            border-radius: 25px;
+            border: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            font-size: 16px;
+            outline: none;
+        }
+
+        #search:focus {
+            border-color: var(--accent-color);
+        }
+
+        .topics-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .topic-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .topic-card h2 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .topic-card ul {
+            list-style-type: none;
+        }
+
+        .topic-card li {
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .topic-card li:last-child {
+            border-bottom: none;
+        }
+
+        .topic-card li:hover {
+            color: var(--highlight-color);
+        }
+
+        .content-section {
+            display: none;
+            margin-top: 30px;
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-section h2 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .content-section h3 {
+            color: var(--highlight-color);
+            margin: 15px 0 10px;
+            font-size: 1.3rem;
+        }
+
+        .content-section p, .content-section li {
+            margin-bottom: 10px;
+        }
+
+        .content-section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #1976D2;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #2a2a2a;
+            color: var(--accent-color);
+        }
+
+        tr:hover {
+            background-color: #2a2a2a;
+        }
+
+        .diagram {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .diagram img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .diagram-caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #aaa;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid var(--border-color);
+            color: #777;
+        }
+
+        .highlight {
+            background-color: rgba(255, 152, 0, 0.2);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .topics-container {
+                grid-template-columns: 1fr;
+            }
+            
+            #search {
+                width: 90%;
+            }
+        }
+        /* New glitch animation styles */
+        .creator-tag {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            z-index: 1000;
+            opacity: 0;
+            text-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+            animation: glitch-appear 2s forwards, glitch-move 3s 2s forwards;
+        }
+
+        @keyframes glitch-appear {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+                text-shadow: 0 0 10px var(--accent-color);
+            }
+            20% {
+                opacity: 1;
+                transform: translateX(0);
+                text-shadow: 0 0 15px var(--accent-color);
+            }
+            30% {
+                transform: translateX(-5px);
+            }
+            40% {
+                transform: translateX(5px);
+            }
+            50% {
+                transform: translateX(-5px);
+            }
+            60% {
+                transform: translateX(5px);
+            }
+            70% {
+                transform: translateX(0);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+                text-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+            }
+        }
+
+        @keyframes glitch-move {
+            0% {
+                left: 20px;
+                opacity: 1;
+            }
+            100% {
+                left: -150px;
+                opacity: 0.3;
+            }
+        }
+
+        .glitch-effect {
+            position: relative;
+        }
+
+        .glitch-effect::before,
+        .glitch-effect::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-color);
+        }
+
+        .glitch-effect::before {
+            left: 2px;
+            text-shadow: -2px 0 #ff00c1;
+            clip: rect(24px, 550px, 90px, 0);
+            animation: glitch-anim-1 2s infinite linear alternate-reverse;
+        }
+
+        .glitch-effect::after {
+            left: -2px;
+            text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+            clip: rect(85px, 550px, 140px, 0);
+            animation: glitch-anim-2 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes glitch-anim-1 {
+            0% {
+                clip: rect(30px, 9999px, 90px, 0);
+            }
+            20% {
+                clip: rect(70px, 9999px, 120px, 0);
+            }
+            40% {
+                clip: rect(10px, 9999px, 80px, 0);
+            }
+            60% {
+                clip: rect(90px, 9999px, 30px, 0);
+            }
+            80% {
+                clip: rect(50px, 9999px, 110px, 0);
+            }
+            100% {
+                clip: rect(60px, 9999px, 70px, 0);
+            }
+        }
+
+        @keyframes glitch-anim-2 {
+            0% {
+                clip: rect(80px, 9999px, 140px, 0);
+            }
+            20% {
+                clip: rect(10px, 9999px, 65px, 0);
+            }
+            40% {
+                clip: rect(100px, 9999px, 30px, 0);
+            }
+            60% {
+                clip: rect(50px, 9999px, 120px, 0);
+            }
+            80% {
+                clip: rect(90px, 9999px, 60px, 0);
+            }
+            100% {
+                clip: rect(30px, 9999px, 100px, 0);
+            }
+        }
+
+        /* Animation for content loading */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content-section {
+            animation: fadeIn 0.5s ease-out;
+        }
+    </style>
+</head>
+    <body>
+    <div class="creator-tag glitch-effect" data-text="Created by ShadowRoot17">Created by ShadowRoot17</div>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Biology Exam Notes</h1>
+            <p class="subtitle">its for your Fucking Paper 2 </p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search topics, keywords...">
+        </div>
+
+        <div id="topics-view">
+            <div class="topics-container">
+                <div class="topic-card" onclick="showContent('environment')">
+                    <h2>Environment</h2>
+                    <ul>
+                        <li>Nitrogen Cycle</li>
+                        <li>Carbon Cycle</li>
+                    </ul>
+                </div>
+
+                <div class="topic-card" onclick="showContent('animal-coordination')">
+                    <h2>Animal Coordination</h2>
+                    <ul>
+                        <li>Hormones</li>
+                        <li>Menstrual Cycle</li>
+                        <li>Controlling Fertility</li>
+                    </ul>
+                </div>
+
+                <div class="topic-card" onclick="showContent('transport-animals')">
+                    <h2>Transport in Animals</h2>
+                    <ul>
+                        <li>Blood Vessels</li>
+                        <li>The Heart</li>
+                        <li>Blood Components</li>
+                    </ul>
+                </div>
+
+                <div class="topic-card" onclick="showContent('plant-structures')">
+                    <h2>Plant Structures</h2>
+                    <ul>
+                        <li>Stomata and Transpiration</li>
+                        <li>Transport and Translocation</li>
+                        <li>Xylem and Phloem</li>
+                    </ul>
+                </div>
+
+                <div class="topic-card" onclick="showContent('nervous-system')">
+                    <h2>Nervous System</h2>
+                    <ul>
+                        <li>Synapses</li>
+                        <li>Reflex Arc</li>
+                        <li>Neurons</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Environment Content -->
+        <div id="environment" class="content-section">
+            <a href="#" class="back-btn" onclick="showTopics()">← Back to Topics</a>
+            <h2>Environment</h2>
+            
+            <h3>Nitrogen Cycle</h3>
+            <p>The nitrogen cycle describes how nitrogen is converted between its various chemical forms as it circulates among the atmosphere, terrestrial, and marine ecosystems.</p>
+            
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Process</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Nitrogen Fixation</td>
+                        <td>Nitrogen gas (N₂) from the air is converted into ammonia (NH₃) by nitrogen-fixing bacteria</td>
+                    </tr>
+                    <tr>
+                        <td>Nitrification</td>
+                        <td>Ammonia (NH₃) is converted into nitrites (NO₂⁻) and then nitrates (NO₃⁻) by nitrifying bacteria</td>
+                    </tr>
+                    <tr>
+                        <td>Assimilation</td>
+                        <td>Plants take in nitrates (NO₃⁻) from the soil and use them to make proteins and DNA</td>
+                    </tr>
+                    <tr>
+                        <td>Ammonification</td>
+                        <td>When plants and animals die (or produce waste), decomposers break them down into ammonia (NH₃)</td>
+                    </tr>
+                    <tr>
+                        <td>Denitrification</td>
+                        <td>Denitrifying bacteria convert nitrates (NO₃⁻) back into nitrogen gas (N₂), which returns to the air</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Carbon Cycle</h3>
+            <p>The carbon cycle is the biogeochemical cycle by which carbon is exchanged among the biosphere, pedosphere, geosphere, hydrosphere, and atmosphere of the Earth.</p>
+            
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Process</th>
+                        <th>Description</th>
+                        <th>Equation</th>
+                    </tr>
+                    <tr>
+                        <td>Photosynthesis</td>
+                        <td>Plants convert CO₂ and water into glucose and oxygen using sunlight</td>
+                        <td>CO₂ + H₂O → Glucose + O₂</td>
+                    </tr>
+                    <tr>
+                        <td>Respiration</td>
+                        <td>Organisms break down glucose to release energy, producing CO₂ and water</td>
+                        <td>Glucose + O₂ → CO₂ + H₂O + Energy</td>
+                    </tr>
+                    <tr>
+                        <td>Feeding (Consumption)</td>
+                        <td>Animals eat plants, passing carbon through the food chain</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Decomposition</td>
+                        <td>When organisms die, decomposers break them down, releasing CO₂ or forming fossil fuels over millions of years</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Combustion (Burning)</td>
+                        <td>When fossil fuels or wood are burned, CO₂ is released into the air</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Fossilisation & Sedimentation</td>
+                        <td>Dead organisms get buried and compressed over millions of years, forming fossil fuels</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Animal Coordination Content -->
+        <div id="animal-coordination" class="content-section">
+            <a href="#" class="back-btn" onclick="showTopics()">← Back to Topics</a>
+            <h2>Animal Coordination</h2>
+            
+            <h3>Hormones</h3>
+            <p>Hormones are chemical messengers that are secreted directly into the blood, which carries them to organs and tissues of the body to exert their functions.</p>
+            
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Hormone</th>
+                        <th>Produced By</th>
+                        <th>Target Organ</th>
+                        <th>Function</th>
+                    </tr>
+                    <tr>
+                        <td>Insulin</td>
+                        <td>Pancreas</td>
+                        <td>Liver, muscles</td>
+                        <td>Regulates the blood glucose level</td>
+                    </tr>
+                    <tr>
+                        <td>Adrenaline</td>
+                        <td>Adrenal glands</td>
+                        <td>Heart, muscles</td>
+                        <td>Prepares the body for a fight or flight response</td>
+                    </tr>
+                    <tr>
+                        <td>Thyroxine</td>
+                        <td>Thyroid gland</td>
+                        <td>All body cells</td>
+                        <td>Regulates metabolic rate</td>
+                    </tr>
+                    <tr>
+                        <td>Many hormones</td>
+                        <td>Pituitary gland</td>
+                        <td>Kidneys</td>
+                        <td>Produces and releases hormones that control other glands</td>
+                    </tr>
+                    <tr>
+                        <td>Oestrogen</td>
+                        <td>Ovaries</td>
+                        <td>Uterus</td>
+                        <td>Involved in the menstrual cycle</td>
+                    </tr>
+                    <tr>
+                        <td>Testosterone</td>
+                        <td>Testes</td>
+                        <td>Male reproductive organs</td>
+                        <td>Controls puberty and sperm production in males</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Menstrual Cycle</h3>
+            <p>The menstrual cycle is a series of natural changes in hormone production and the structures of the uterus and ovaries of the female reproductive system that make pregnancy possible.</p>
+            
+            <ul>
+                <li><strong>FSH</strong> - Matures the egg</li>
+                <li><strong>LH</strong> - Releases the egg</li>
+                <li><strong>Oestrogen</strong> - Builds-up the lining of the uterus</li>
+                <li><strong>Progesterone</strong> - Maintains the lining thickness</li>
+            </ul>
+
+            <h4>Menstrual Cycle Stages (28 days)</h4>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Day</th>
+                        <th>Process</th>
+                    </tr>
+                    <tr>
+                        <td>Stage 1</td>
+                        <td>Day 1</td>
+                        <td>Pituitary gland releases FSH → causes ovaries to make oestrogen</td>
+                    </tr>
+                    <tr>
+                        <td>Stage 2</td>
+                        <td>Day 4</td>
+                        <td>Oestrogen thickens the uterus lining and stops the pituitary gland</td>
+                    </tr>
+                    <tr>
+                        <td>Stage 3</td>
+                        <td>Day 14</td>
+                        <td>Pituitary gland releases LH → LH releases eggs and ovaries release progesterone</td>
+                    </tr>
+                    <tr>
+                        <td>Stage 4</td>
+                        <td>Day 28</td>
+                        <td>Progesterone keeps uterus lining thick and stops the pituitary gland from releasing FSH and LH</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Controlling Fertility</h3>
+            <p>Managing the ability to get pregnant. Either by increasing the chances of pregnancy or by preventing pregnancy.</p>
+            
+            <h4>IVF (In Vitro Fertilisation)</h4>
+            <p><strong>What is it:</strong> A fertility treatment where egg and sperm are combined outside the body in a lab.</p>
+            <p><strong>Process:</strong></p>
+            <ol>
+                <li>Woman is given hormones to stimulate multiple eggs</li>
+                <li>Eggs are collected from ovaries</li>
+                <li>Eggs are fertilised by sperm in the lab</li>
+                <li>Fertilised embryos grow for a few days</li>
+                <li>One or more embryos are implanted back into the woman's uterus to develop naturally</li>
+            </ol>
+            <p><strong>Purpose:</strong> Helps couples who have problems with fertility (e.g., blocked fallopian tubes, low sperm count)</p>
+            <p><strong>Pros:</strong> Can enable pregnancy when natural conception is difficult</p>
+            <p><strong>Cons:</strong> Expensive, not always successful, emotionally and physically demanding</p>
+
+            <h4>Clomifene Therapy</h4>
+            <p><strong>What it is:</strong> A fertility drug that stimulates the pituitary gland to release more FSH (Follicle Stimulating Hormone)</p>
+            <p><strong>How it works:</strong> Increased FSH causes ovaries to mature and release eggs (induces ovulation)</p>
+            <p><strong>Purpose:</strong> Used for women who do not ovulate regularly or have low hormone levels affecting fertility</p>
+            <p><strong>Pros:</strong> Non-invasive, can improve chances of natural conception</p>
+            <p><strong>Cons:</strong> Possible side effects: hot flushes, headaches, multiple pregnancies (twins, triplets)</p>
+        </div>
+
+        <!-- Transport in Animals Content -->
+        <div id="transport-animals" class="content-section">
+            <a href="#" class="back-btn" onclick="showTopics()">← Back to Topics</a>
+            <h2>Transport in Animals</h2>
+            
+            <h3>Blood Vessels</h3>
+            
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Vessel Type</th>
+                        <th>Structure</th>
+                        <th>Function</th>
+                        <th>Blood Pressure</th>
+                    </tr>
+                    <tr>
+                        <td>Arteries</td>
+                        <td>
+                            <ul>
+                                <li>Thick, muscular, and elastic walls to handle high pressure</li>
+                                <li>Narrow lumen to maintain pressure</li>
+                                <li>No valves</li>
+                            </ul>
+                        </td>
+                        <td>Carry oxygenated blood away from the heart to the rest of the body under pressure</td>
+                        <td>High pressure due to forceful heart contractions</td>
+                    </tr>
+                    <tr>
+                        <td>Capillaries</td>
+                        <td>
+                            <ul>
+                                <li>One cell thick walls (very thin) to allow easy exchange</li>
+                                <li>Narrow lumen, just wide enough for red blood cells to pass through single-file</li>
+                            </ul>
+                        </td>
+                        <td>Allow exchange of gases, nutrients, and waste between blood and body cells</td>
+                        <td>Low pressure</td>
+                    </tr>
+                    <tr>
+                        <td>Veins</td>
+                        <td>
+                            <ul>
+                                <li>Thinner walls than arteries</li>
+                                <li>Larger lumen to help blood flow at low pressure</li>
+                                <li>Valves present to prevent backflow of blood</li>
+                            </ul>
+                        </td>
+                        <td>Carry deoxygenated blood back to the heart</td>
+                        <td>Low pressure compared to arteries</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>The Heart</h3>
+            <p>The heart is divided into four chambers:</p>
+            <ol>
+                <li><strong>Right Atrium</strong> – Receives deoxygenated blood from the body via the vena cava</li>
+                <li><strong>Right Ventricle</strong> – Pumps deoxygenated blood to the lungs via the pulmonary artery</li>
+                <li><strong>Left Atrium</strong> – Receives oxygenated blood from the lungs via the pulmonary veins</li>
+                <li><strong>Left Ventricle</strong> – Pumps oxygenated blood to the body via the aorta (has the thickest muscle wall for high-pressure pumping)</li>
+            </ol>
+
+            <h4>Key Functions of the Heart</h4>
+            <ul>
+                <li><strong>Double Pump System</strong>
+                    <ul>
+                        <li>Right side pumps blood to the lungs (pulmonary circulation) for oxygenation</li>
+                        <li>Left side pumps oxygen-rich blood to the body (systemic circulation)</li>
+                    </ul>
+                </li>
+                <li>Valves (tricuspid, bicuspid, pulmonary, aortic) prevent backflow of blood</li>
+                <li>Coronary Arteries supply the heart muscle itself with oxygenated blood</li>
+            </ul>
+
+            <h4>Steps of Blood Flow Through the Heart</h4>
+            <ol>
+                <li><strong>Deoxygenated Blood Enters the Heart</strong>
+                    <p>Deoxygenated blood from the body flows into the right atrium through the vena cava</p>
+                </li>
+                <li><strong>Blood Moves to the Right Ventricle</strong>
+                    <p>The right atrium contracts, pushing blood through the tricuspid valve into the right ventricle</p>
+                </li>
+                <li><strong>Blood is Pumped to the Lungs</strong>
+                    <p>The right ventricle contracts, forcing blood through the pulmonary valve into the pulmonary artery. The blood travels to the lungs, where it picks up oxygen and releases carbon dioxide</p>
+                </li>
+                <li><strong>Oxygenated Blood Returns to the Heart</strong>
+                    <p>Oxygenated blood returns from the lungs via the pulmonary veins</p>
+                </li>
+                <li><strong>Blood Moves to the Left Ventricle</strong>
+                    <p>The left atrium contracts, pushing blood through the bicuspid valve into the left ventricle</p>
+                </li>
+                <li><strong>Blood is Pumped to the Body</strong>
+                    <p>The left ventricle contracts strongly, forcing blood through the aortic valve into the aorta. The oxygen-rich blood is then distributed to the entire body through smaller arteries and capillaries</p>
+                </li>
+            </ol>
+
+            <h3>Blood Components</h3>
+            <p>Blood is made up of four main components:</p>
+            
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Component</th>
+                        <th>Description</th>
+                        <th>Function</th>
+                    </tr>
+                    <tr>
+                        <td>Plasma (55%)</td>
+                        <td>A yellow liquid</td>
+                        <td>
+                            <ul>
+                                <li>Carries nutrients (e.g., glucose, amino acids)</li>
+                                <li>Carries waste products (e.g., CO₂, urea)</li>
+                                <li>Carries hormones</li>
+                                <li>Carries proteins (e.g., antibodies, clotting factors)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Red Blood Cells (Erythrocytes)</td>
+                        <td>
+                            <ul>
+                                <li>Contain haemoglobin to carry oxygen</li>
+                                <li>No nucleus (more space for haemoglobin)</li>
+                                <li>Biconcave shape (large surface area for gas exchange)</li>
+                            </ul>
+                        </td>
+                        <td>Transport oxygen from lungs to tissues</td>
+                    </tr>
+                    <tr>
+                        <td>White Blood Cells (Leucocytes)</td>
+                        <td>
+                            <ul>
+                                <li>Part of the immune system</li>
+                                <li>Have a nucleus</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Fight infections (some produce antibodies, others engulf pathogens via phagocytosis)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Platelets</td>
+                        <td>Tiny cell fragments</td>
+                        <td>Help clot blood (prevent excessive bleeding)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h4>Functions of Blood</h4>
+            <ol>
+                <li><strong>Transport</strong>
+                    <ul>
+                        <li>Oxygen (from lungs to cells via red blood cells)</li>
+                        <li>Carbon dioxide (from cells to lungs to be exhaled)</li>
+                        <li>Nutrients (e.g., glucose from digestion to cells)</li>
+                        <li>Waste (e.g., urea to kidneys for excretion)</li>
+                        <li>Hormones (chemical messengers, e.g., insulin)</li>
+                    </ul>
+                </li>
+                <li><strong>Defence</strong>
+                    <ul>
+                        <li>White blood cells destroy pathogens (bacteria, viruses)</li>
+                        <li>Antibodies help fight infections</li>
+                    </ul>
+                </li>
+                <li><strong>Temperature Regulation</strong>
+                    <ul>
+                        <li>Blood absorbs and distributes heat to maintain body temperature</li>
+                    </ul>
+                </li>
+                <li><strong>Clotting (Prevents Blood Loss)</strong>
+                    <ul>
+                        <li>Platelets form clots to seal wounds</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Plant Structures Content -->
+        <div id="plant-structures" class="content-section">
+            <a href="#" class="back-btn" onclick="showTopics()">← Back to Topics</a>
+            <h2>Plant Structures</h2>
+            
+            <h3>Stomata and Transpiration</h3>
+            
+            <h4>Stomata</h4>
+            <p>Tiny pores found mostly on the underside of plant leaves.</p>
+            <p><strong>Structure:</strong></p>
+            <ul>
+                <li>Each stoma (singular) is surrounded by guard cells that control its opening and closing</li>
+                <li>Guard cells change shape to open or close the pore</li>
+            </ul>
+            <p><strong>Function:</strong></p>
+            <ul>
+                <li>Allow gas exchange between the plant and the atmosphere</li>
+                <li>Let carbon dioxide (CO₂) in for photosynthesis</li>
+                <li>Let oxygen (O₂) out as a byproduct of photosynthesis</li>
+                <li>Enable water vapor to exit during transpiration</li>
+            </ul>
+
+            <h4>Transpiration</h4>
+            <p>The process by which water vapor is lost from a plant. Water moves from high concentration to low concentration.</p>
+            <p><strong>Factors affecting transpiration:</strong></p>
+            <ul>
+                <li>Light intensity (more light → more transpiration)</li>
+                <li>Temperature (higher temp → faster transpiration)</li>
+                <li>Humidity (lower humidity → more transpiration)</li>
+                <li>Wind (more wind → more transpiration)</li>
+            </ul>
+            <p><strong>How it happens:</strong></p>
+            <ol>
+                <li>Water is absorbed by roots from the soil</li>
+                <li>Water travels up the plant through xylem vessels</li>
+                <li>Water evaporates from the leaf surfaces inside the leaf</li>
+                <li>Water vapor exits the leaf through open stomata into the air</li>
+            </ol>
+
+            <h3>Transport and Translocation</h3>
+            
+            <h4>Translocation</h4>
+            <p>The transport of minerals from leaves to other parts of the plant using active transport.</p>
+            <p><strong>Why it happens:</strong> Transpiration creates a water potential gradient that pulls water up from the roots, helping transport nutrients and keeping cells turgid.</p>
+            <p><strong>Active Transport:</strong> Movement of substances from a low concentration to a high concentration, against the concentration gradient, using energy.</p>
+
+            <h3>Xylem and Phloem</h3>
+            
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Tissue</th>
+                        <th>Function</th>
+                        <th>Key Features</th>
+                        <th>Process</th>
+                    </tr>
+                    <tr>
+                        <td>Xylem</td>
+                        <td>
+                            <ol>
+                                <li>Transports water and dissolved minerals (e.g., nitrates) from roots to leaves (upwards only)</li>
+                                <li>Provides structural support (contains lignin, making plant stems rigid)</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Dead cells (hollow tubes with no cytoplasm)</li>
+                                <li>Lignin (a tough, waterproof substance) that strengthens the walls</li>
+                                <li>Transpiration stream (water movement driven by evaporation from leaves)</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Roots absorb water and minerals from soil</li>
+                                <li>Water moves up xylem vessels by transpiration pull (evaporation from leaves creates suction)</li>
+                                <li>Cohesion-tension theory – Water molecules stick together (cohesion) and are pulled upwards</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Phloem</td>
+                        <td>
+                            <ol>
+                                <li>Transports minerals to growing and storage tissues (up and down the plant). This process is called translocation</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Living cells (unlike xylem)</li>
+                                <li>Made of sieve tube elements (no nucleus, allows sap flow) and companion cells (provide energy for translocation)</li>
+                                <li>Requires energy (ATP) for active transport</li>
+                            </ol>
+                        </td>
+                        <td>
+                            <ol>
+                                <li>Sugars are made in source</li>
+                                <li>Sugars are actively loaded into phloem</li>
+                                <li>Water follows by osmosis, creating pressure that pushes sap to sink (e.g., roots, fruits)</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Nervous System Content -->
+        <div id="nervous-system" class="content-section">
+            <a href="#" class="back-btn" onclick="showTopics()">← Back to Topics</a>
+            <h2>Nervous System</h2>
+            
+            <h3>Synapses - Connect Neurons</h3>
+            <p>A synapse is the junction between two neurons or between a neuron and an effector cell (such as a muscle or gland cell).</p>
+            <p><strong>Process of Synaptic Transmission:</strong></p>
+            <ol>
+                <li>Electrical impulse reaches the end of the presynaptic neuron</li>
+                <li>This triggers the release of neurotransmitter molecules from vesicles</li>
+                <li>Neurotransmitters diffuse across the synaptic cleft</li>
+                <li>Neurotransmitters bind to receptor molecules on the postsynaptic membrane</li>
+                <li>This binding triggers a new electrical impulse in the postsynaptic neuron</li>
+                <li>Neurotransmitters are then broken down by enzymes or reabsorbed</li>
+            </ol>
+
+            <h3>Reflex Arc</h3>
+            <p>A reflex arc is the neural pathway that mediates a reflex action. It allows for rapid, involuntary responses to stimuli.</p>
+            <p><strong>Components of a Reflex Arc:</strong></p>
+            <ol>
+                <li><strong>Receptor</strong> - Detects the stimulus</li>
+                <li><strong>Sensory Neuron</strong> - Carries impulse to CNS</li>
+                <li><strong>Relay Neuron</strong> - In spinal cord, connects sensory to motor neuron</li>
+                <li><strong>Motor Neuron</strong> - Carries impulse to effector</li>
+                <li><strong>Effector</strong> - Muscle or gland that responds</li>
+            </ol>
+            <p><strong>Example:</strong> When you touch something hot:
+                <ol>
+                    <li>Heat receptors in skin detect high temperature</li>
+                    <li>Sensory neuron sends impulse to spinal cord</li>
+                    <li>Relay neuron passes signal to motor neuron</li>
+                    <li>Motor neuron sends impulse to arm muscles</li>
+                    <li>Arm muscles contract to pull hand away</li>
+                </ol>
+            </p>
+
+            <h3>Neurons</h3>
+            <p>Neurons are specialized cells that transmit electrical and chemical signals in the nervous system.</p>
+            
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Neuron Type</th>
+                        <th>Structure</th>
+                        <th>Function</th>
+                    </tr>
+                    <tr>
+                        <td>Sensory Neurons</td>
+                        <td>
+                            <ul>
+                                <li>Long dendrites</li>
+                                <li>Short axon</li>
+                                <li>Cell body in middle</li>
+                            </ul>
+                        </td>
+                        <td>Carry impulses from receptors to CNS</td>
+                    </tr>
+                    <tr>
+                        <td>Relay Neurons (Interneurons)</td>
+                        <td>
+                            <ul>
+                                <li>Many short dendrites</li>
+                                <li>Short axon</li>
+                            </ul>
+                        </td>
+                        <td>Connect sensory and motor neurons in CNS</td>
+                    </tr>
+                    <tr>
+                        <td>Motor Neurons</td>
+                        <td>
+                            <ul>
+                                <li>Short dendrites</li>
+                                <li>Long axon</li>
+                                <li>Cell body at one end</li>
+                            </ul>
+                        </td>
+                        <td>Carry impulses from CNS to effectors (muscles/glands)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h4>Structure of a Typical Neuron</h4>
+            <ul>
+                <li><strong>Dendrites</strong> - Receive signals from other neurons</li>
+                <li><strong>Cell Body</strong> - Contains nucleus and organelles</li>
+                <li><strong>Axon</strong> - Long fiber that carries impulses away from cell body</li>
+                <li><strong>Myelin Sheath</strong> - Fatty layer that insulates axon and speeds up impulse</li>
+                <li><strong>Nodes of Ranvier</strong> - Gaps in myelin sheath where impulses "jump"</li>
+                <li><strong>Synaptic Terminals</strong> - End of axon that releases neurotransmitters</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>Biology Exam Notes &copy; 2025 | Created by ShdowRoot17</p>
+        </div>
+    </div>
+
+   <script>
+       // Show the topics view and hide all content sections
+        function showTopics() {
+            document.getElementById('topics-view').style.display = 'block';
+            const sections = document.getElementsByClassName('content-section');
+            for (let section of sections) {
+                section.style.display = 'none';
+            }
+            document.getElementById('search').value = '';
+            window.scrollTo(0, 0);
+        }
+
+        // Show a specific content section and hide the topics view
+        function showContent(sectionId) {
+            document.getElementById('topics-view').style.display = 'none';
+            const sections = document.getElementsByClassName('content-section');
+            for (let section of sections) {
+                section.style.display = 'none';
+            }
+            document.getElementById(sectionId).style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        // Search functionality
+        document.getElementById('search').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            if (searchTerm.length < 2) return;
+
+            // First check if we're in a content section
+            const currentSection = document.querySelector('.content-section[style="display: block;"]');
+            if (currentSection) {
+                highlightInSection(currentSection, searchTerm);
+            } else {
+                // We're in the topics view
+                const cards = document.querySelectorAll('.topic-card');
+                cards.forEach(card => {
+                    const text = card.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        card.style.borderLeft = '4px solid var(--highlight-color)';
+                        card.style.transform = 'scale(1.02)';
+                    } else {
+                        card.style.borderLeft = '4px solid var(--accent-color)';
+                        card.style.transform = 'scale(1)';
+                    }
+                });
+            }
+        });
+
+        function highlightInSection(section, term) {
+            // Remove previous highlights
+            const highlights = section.querySelectorAll('.highlight');
+            highlights.forEach(el => {
+                const parent = el.parentNode;
+                parent.replaceChild(document.createTextNode(el.textContent), el);
+            });
+
+            // Highlight new matches
+            const walker = document.createTreeWalker(
+                section,
+                NodeFilter.SHOW_TEXT,
+                null,
+                false
+            );
+
+            let node;
+            while (node = walker.nextNode()) {
+                if (node.nodeType === 3 && node.textContent.toLowerCase().includes(term)) {
+                    const span = document.createElement('span');
+                    span.className = 'highlight';
+                    const text = node.textContent;
+                    const start = text.toLowerCase().indexOf(term);
+                    const end = start + term.length;
+                    
+                    span.appendChild(document.createTextNode(text.substring(start, end)));
+                    const afterText = document.createTextNode(text.substring(end));
+                    node.parentNode.insertBefore(
+                        document.createTextNode(text.substring(0, start)),
+                        node
+                    );
+                    node.parentNode.insertBefore(span, node);
+                    node.parentNode.insertBefore(afterText, node);
+                    node.parentNode.removeChild(node);
+                }
+            }
+        }
+
+        // Initialize by showing topics view
+        showTopics();
+
+        // Remove creator tag after animation completes
+        setTimeout(() => {
+            const creatorTag = document.querySelector('.creator-tag');
+            if (creatorTag) {
+                setTimeout(() => {
+                    creatorTag.style.display = 'none';
+                }, 3000);
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
+
+</body>
+</html>
