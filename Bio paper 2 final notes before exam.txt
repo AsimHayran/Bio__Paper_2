@@ -1,0 +1,244 @@
+1.enviroment
+   1. Nitrogen Cycle
+   2. carbon cycle 
+   
+2.Animal coordinations
+   1. Hormons
+   2. Mentrual cycle
+   3. Controling fertility
+   
+3.Transport in Animals
+   2. Blood Vessels
+   3. The Heart 
+ 
+4.plant structures
+   1. Stomata and transpiration
+   2. Tranport and Translocation
+   3. xylem and phlome 
+    
+
+5.Nervous System 
+  1. Synapses-Connet Neurones
+  2. Reflexe Arc
+  3. Neurones 
+ =====================================================================================================================================================================================================================================================================================================================================enviroment=============================================================
+ 1.Nitrogen Cycle
+    1.Nitrogen Fixation
+       Nitrogen gas (N₂) from the air is converted into ammonia (NH₃) by nitrogen-fixing bacteria
+    2.Nitrification
+        Ammonia (NH₃) is converted into nitrites (NO₂⁻) and then nitrates (NO₃⁻) by nitrifying bacteria
+    3.Assimilation
+        Plants take in nitrates (NO₃⁻) from the soil and use them to make proteins and DNA.
+    4.Ammonification
+        When plants and animals die (or produce waste), decomposers  break them down into ammonia (NH₃).
+    5.Denitrification
+        Denitrifying bacteria convert nitrates (NO₃⁻) back into nitrogen gas (N₂), which returns to the air.
+-------------------------------------------------------------------------------------------------------------------------------------
+2.carbon cycle
+   1. Photosynthesis
+        Co2+Ho2-->Glucose+O2 
+   2. Respiration
+        Glucose+O2-->Co2+Ho2+Energy
+   3. Feeding (Consumption)
+         Animals eat plants, passing carbon through the food chain.
+   4. Decomposition
+         When organisms die, decomposers break them down, releasing CO₂ or forming fossil fuels over millions of years.
+   5. Combustion (Burning)
+         When fossil fuels or wood are burned, CO₂ is released into the air.
+   6. Fossilisation & Sedimentation
+          Dead organisms get buried and compressed over millions of years, forming fossil fuels 
+
+=========================================================================================================================================================================================================================================================================================================================Animal Coordinations===============================================================
+|----------------------------------------------------------------------------------------------------------------------|
+| Hormone          | Produced By     | Target Organ   | Function                                                       |
+| ---------------- | --------------- | -------------- | -------------------------------------------------------------- |
+|   Insulin        | Pancreas        | Liver, muscles | is used to regulate the blood glucose leve                     |
+|   Adrenaline     | Adrenal glands  | Heart, muscles | perpare the body for a fight or flight                         |
+|   Thyroxine      | Thyroid gland   | All body cells | Regulates metabolic rate                                       |
+|   Many hormons   | Pituitary gland | Kidneys        | It produces and releases hormones that control other glands    |
+|   Oestrogen      | Ovaries         | Uterus         | involved in the menstrul cycle                                 | 
+|   Testosterone   | Testes     | Male reproductive organs | controls Puberty and sperm production in males only       |
+|----------------------------------------------------------------------------------------------------------------------|
+-------------------------------------------------------------------------------------------------------------------------------------
+ 2.Mentrual cycle
+     1. FSH
+         It mature the egg
+     2. LH
+         Releases the egg
+     3. Osrogen
+          Builds-up the lining of the uterus
+     3. Progesieren 
+           maintains the lining thickneses
+  Menstrual cycle  (28 days)
+     Stage1(dey 1)-> pitucitary gland releases FSh--> auses ovaries to make oestrogen
+     Stage2(day 4)-> oestrogen-thickens the uterus lining and stops the pituitary gland
+     Stage3(day 14)-> pituetry gland releases LH-LH releses eggs and ovanes release progesterone
+     stage4(day 28)->progesterone-- keeps uterus lining thick and stops the piuitary gland from releasing FSH and LH
+------------------------------------------------------------------------------------------------------------------------------------
+3. Controlling fertility
+     managing the ability to get pregnant. Either by increasing the chances of pregnancy or by preventing pregnancy.
+1. IVF (In Vitro Fertilisation)
+ What is it: A fertility treatment where egg and sperm are combined outside the body in a lab.
+Process:
+    1. Woman is given hormones to stimulate multiple eggs.
+    2. Eggs are collected from ovaries.
+    3. Eggs are fertilised by sperm in the lab.
+    4. Fertilised embryos grow for a few days.
+    5. One or more embryos are implanted back into the woman’s uterus to develop naturally.
+        Purpose: Helps couples who have problems with fertility (e.g., blocked fallopian tubes, low sperm count).
+        Pros: Can enable pregnancy when natural conception is difficult.
+        Cons: Expensive, not always successful, emotionally and physically demanding.
+
+2. Clomifene Therapy
+what it is : A fertility drug that stimulates the pituitary gland to release more FSH (Follicle Stimulating Hormone).
+How it works: Increased FSH causes ovaries to mature and release eggs (induces ovulation).
+Purpose: Used for women who do not ovulate regularly or have low hormone levels affecting fertility.
+Pros: Non-invasive, can improve chances of natural conception.
+Cons: Possible side effects: hot flushes, headaches, multiple pregnancies (twins, triplets).
+===============================================================================================================================================================================================================================================================================================================================Transport in Animals=========================================================
+1. Blood Vessels
+     1. Arteries
+           Blood vessels that carry oxygenated blood away from the heart to the rest of the body under pressure
+           Structure:- Thick, muscular, and elastic walls to handle high pressure from the heart pumping.
+                     - Narrow lumen (the inside space) to maintain pressure.
+                     - No valves (because blood is pumped strongly enough).
+           Function:  Deliver oxygen-rich blood and nutrients quickly to body tissues.
+            Blood pressure:	High pressure due to forceful heart contractions.
+          
+     2. Capillaries
+           The smallest blood vessels in the body connecting arterioles and venules.
+            Structure: - One cell thick walls (very thin) to allow easy exchange.
+                       - Narrow lumen, just wide enough for red blood cells to pass through single-file.
+           Function: Allow exchange of gases, nutrients, and waste between blood and body cells 
+           
+     3. Venis
+          Blood vessels that carry deoxygenated blood back to the heart
+            Structure:	- Thinner walls than arteries.
+                        - Larger lumen to help blood flow at low pressure.
+                        - Valves present to prevent backflow of blood.
+            Function: Return blood to the heart for re-oxygenation and removal of waste.
+            Blood pressure: Low pressure compared to arteries.
+------------------------------------------------------------------------------------------------------------------------------------
+2. The Heart 
+The heart is divided into four chambers:
+    1. Right Atrium – Receives deoxygenated blood from the body via the vena cava.
+    2. Right Ventricle – Pumps deoxygenated blood to the lungs via the pulmonary artery.
+    3. Left Atrium – Receives oxygenated blood from the lungs via the pulmonary veins.
+    4. Left Ventricle – Pumps oxygenated blood to the body via the aorta (has the thickest muscle wall for high-pressure pumping).
+
+Key Functions of the Heart
+             Double Pump System
+             Right side pumps blood to the lungs (pulmonary circulation) for oxygenation.
+             Left side pumps oxygen-rich blood to the body (systemic circulation).
+             Valves (tricuspid, bicuspid, pulmonary, aortic) prevent backflow of blood.
+             Coronary Arteries supply the heart muscle itself with oxygenated blood.
+ Steps
+   Step 1: Deoxygenated Blood Enters the Heart
+             Deoxygenated blood from the body flows into the right atrium through the vena cava.
+    Step 2: Blood Moves to the Right Ventricle
+              The right atrium contracts, pushing blood through the tricuspid valve into the right ventricle.
+    Step 3: Blood is Pumped to the Lungs
+              The right ventricle contracts, forcing blood through the pulmonary valve into the pulmonary artery 
+              The blood travels to the lungs, where it picks up oxygen and releases carbon dioxide.
+    Step 4: Oxygenated Blood Returns to the Heart
+             Oxygenated blood returns from the lungs via the pulmonary veins 
+    Step 5: Blood Moves to the Left Ventricle
+            The left atrium contracts, pushing blood through the bicuspid valve into the left ventricle.
+    Step 6: Blood is Pumped to the Body
+        The left ventricle contracts strongly, forcing blood through the aortic valve into the aorta.
+        The oxygen-rich blood is then distributed to the entire body through smaller arteries and capillaries
+------------------------------------------------------------------------------------------------------------------------------------
+3. Blood
+    Blood is made up of four main components:
+
+Component	
+Plasma (55%)	A yellow liquid that carries:
+     Function
+       - Nutrients (e.g., glucose, amino acids)
+       - Waste products (e.g., CO₂, urea)
+       - Hormones
+       - Proteins (e.g., antibodies, clotting factors)
+Red Blood Cells (Erythrocytes)	- Contain haemoglobin to carry oxygen
+   Function
+     - No nucleus (more space for haemoglobin)
+     - Biconcave shape (large surface area for gas exchange)
+White Blood Cells (Leucocytes)	- Part of the immune system
+  Function
+   - Fight infections (some produce antibodies, others engulf pathogens via phagocytosis)
+   - Have a nucleus
+Platelets	- Tiny cell fragments
+  Function
+- Help clot blood (prevent excessive bleeding)
+
+Functions of Blood
+ 1. Transport
+      Oxygen (from lungs to cells via red blood cells)
+      Carbon dioxide (from cells to lungs to be exhaled)
+      Nutrients (e.g., glucose from digestion to cells)
+      Waste (e.g., urea to kidneys for excretion)
+      Hormones (chemical messengers, e.g., insulin)
+  2. Defence 
+      White blood cells destroy pathogens (bacteria, viruses).
+      Antibodies help fight infections.
+  3.Temperature Regulation
+      Blood absorbs and distributes heat to maintain body temperature.
+      Clotting (Prevents Blood Loss)
+      Platelets form clots to seal wounds.
+
+===============================================================================================================================================================================================================================================================================================================================plant structures=============================================================
+1. Stomata
+     Tiny pores found mostly on the underside of plant leaves.
+      Structure: - Each stoma (singular) is surrounded by guard cells that control its opening and closing.
+                 - Guard cells change shape to open or close the pore.
+ Function: 
+     - Allow gas exchange between the plant and the atmosphere.
+     - Let carbon dioxide (CO₂) in for photosynthesis.
+     - Let oxygen (O₂) out as a byproduct of photosynthesis.
+     - Enable water vapor to exit during transpiration.
+------------------------------------------------------------------------------------------------------------------------------------
+2. Transpiration
+      The process by which water vapor is lost from a plant. Water moves from high concentration to low concentration.
+   Factors affecting transpiration:	
+     1. Light intensity (more light → more transpiration), 
+     2. temperature (higher temp → faster transpiration), 
+     3. humidity (lower humidity → more transpiration), wind (more wind → more transpiration).
+  How it happens:	
+      1. Water is absorbed by roots from the soil.
+      2. Water travels up the plant through xylem vessels.
+      3. Water evaporates from the leaf surfaces inside the leaf.
+      4. Water vapor exits the leaf through open stomata into the air.
+
+2. Translocation
+         The transport of menrals from  leaves to other parts of the plant using active transport
+     Why it happens: Transpiration creates a water potential gradient that pulls water up from the roots, helping transport nutrients and keeping cells turgid.
+Factors affecting transpiration:	Light intensity (more light → more transpiration), temperature (higher temp → faster transpiration), humidity (lower humidity → more transpiration), wind (more wind → more transpiration).
+Active Transport
+     movement of substances from a low concentration to a high concentration, against the concentration gradient, using energy
+------------------------------------------------------------------------------------------------------------------------------------
+3. xylem and phlome 
+     1. Xylem
+         Function:
+              1. Transports water and dissolved minerals (e.g., nitrates) from roots to leaves (upwards only).
+              2. Provides structural support (contains lignin, making plant stems rigid).
+        Key Features:
+              1. Dead cells (hollow tubes with no cytoplasm).
+              2. Lignin (a tough, waterproof substance) that strengthens the walls.
+              3. Transpiration stream (water movement driven by evaporation from leaves).
+         Process:
+            Roots absorb water and minerals from soil.
+            Water moves up xylem vessels by transpiration pull (evaporation from leaves creates suction).
+            Cohesion-tension theory – Water molecules stick together (cohesion) and are pulled upwards.
+
+     2. Phloem
+         Function:
+            1. Transports menrals to growing and storage tissues (up and down the plant).This process is called translocation.
+        Key Features:
+           1. Living cells (unlike xylem).
+           2. Made of sieve tube elements (no nucleus, allows sap flow) and companion cells (provide energy for translocation).
+           3. Requires energy (ATP) for active transport.
+        Process:
+          1. Sugars are made in source
+          2. Sugars are actively loaded into phloem.
+          3. Water follows by osmosis, creating pressure that pushes sap to sink (e.g., roots, fruits). 
+===============================================================================================================================================================================================================================================================================================================================plant structures=============================================================
+     
